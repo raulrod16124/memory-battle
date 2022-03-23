@@ -1,3 +1,4 @@
+// Interfaces
 export interface Card {
   id: number;
   src: string;
@@ -6,6 +7,8 @@ export interface Card {
 export interface CardListInterface {
   [index: number]: Card;
 }
+
+// Lists of Cards
 
 export const cardList: CardListInterface = [
   { id: 0, src: "/img/helmet-1.png", matched: false },

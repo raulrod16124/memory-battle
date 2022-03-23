@@ -8,4 +8,30 @@
     border: 2px solid $white;
     border-radius: 0.6rem;
   }
+
+  // front of card - the picture
+
+  .img-front {
+    position: absolute;
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+  }
+
+  .flipped .img-front {
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+  }
+
+  // back of card - cover
+
+  .img-back {
+    // transform: rotateY(0deg);
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+  }
+
+  .flipped .img-back {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+  }
 }
