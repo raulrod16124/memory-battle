@@ -1,3 +1,5 @@
+@import "./../utils/mixins.scss";
+
 .board {
   margin: 0 2rem;
   .btn-new-game {
@@ -13,5 +15,11 @@
   .btn-new-game:hover {
     background: #c23866;
     color: #fff;
+  }
+
+  @include Phone {
+    .turns{
+      margin-top: 10px;
+    }
   }
 }

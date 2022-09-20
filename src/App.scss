@@ -1,10 +1,8 @@
 @import "./utils/mixins.scss";
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .app {
   max-width: 860px;
   margin: 20px auto;
-  font-family: 'Lobster', cursive;
   
   .title-content{
     display: flex;

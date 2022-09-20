@@ -1,15 +1,13 @@
 @import "./utils/mixins.scss";
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .splash-content{
-    width:400px;
+    width: 100%;
     height: 400px;
     margin: 200px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Lobster', cursive;
     
     .splash-img{
         width: 150px;
