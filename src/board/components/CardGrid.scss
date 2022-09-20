@@ -1,6 +1,13 @@
+@import "./../../utils/mixins.scss";
+
 .card-grid {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+  
+  @include Phone{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
 }

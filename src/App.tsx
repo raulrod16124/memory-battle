@@ -24,7 +24,7 @@ function App() {
           <div className="app animate__animated animate__fadeIn">
             <div className="title-content">
               <img className="img-title" src="/img/mental-health.png" />
-              <h1 className="title-1">Memory game</h1>
+              <h1 className="titleH1">Memory game</h1>
             </div>
             <Board />
           </div>
