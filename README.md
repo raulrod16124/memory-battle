@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). .\
-Try by yourself here -> https://memory-game5000.netlify.app/
+Try by yourself here -> https://memorygame3000.netlify.app/
 
 ## Available Scripts
 
