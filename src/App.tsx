@@ -1,15 +1,37 @@
 import "./App.scss";
+import 'animate.css';
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import { Board } from "./board/Board";
+import { SplashPage } from "./SplashPage";
 
 function App() {
+
+  const [isSplashPageActive, setIsSplashPageActive] = useState<boolean>(true);
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setIsSplashPageActive(false)
+    }, 3000)
+  }, [])
+
   return (
-    <div className="app">
-      <h1 className="title-1">Magic Match</h1>
-      <Board />
-    </div>
+    <>
+      {isSplashPageActive 
+        ? <SplashPage />
+        : (
+          <div className="app animate__animated animate__fadeIn">
+            <div className="title-content">
+              <img className="img-title" src="/img/mental-health.png" />
+              <h1 className="title-1">Memory game</h1>
+            </div>
+            <Board />
+          </div>
+          )
+        }
+    </>
+        
   );
 }
 
